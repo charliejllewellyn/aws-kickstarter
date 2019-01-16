@@ -22,7 +22,9 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
       <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/3-VPC_Build/images/select_vpc.png">
     </p>
       
-1. Select the tick box next to the default VPC and select **Actions > Delete VPC**.  On the confirmation screen select **Delete VPC**
+1. Select the tick box next to the default VPC and select **Actions > Delete VPC**.
+1. Tick the checkbox **I acknowledge that I want to delete my default VPC.**
+1. On the confirmation screen select **Delete VPC**
 
 </details>
 
