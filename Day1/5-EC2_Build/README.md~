@@ -69,7 +69,6 @@ This guide will walk through the following scenarios.
 </details>
 
 <details>
-
 <summary><strong>Access Instance</strong></summary><p>
 
 1. Click **Connect**.
@@ -90,9 +89,10 @@ This guide will walk through the following scenarios.
 
 </details>
 
+<details>
 <summary><strong>Delete Instance</strong></summary><p>
 
-1. In the AWS Console click **Actions** --> **INstance State** --> **Terminate**.
+1. In the AWS Console click **Actions** --> **Instance State** --> **Terminate**.
     <p align="left">
       <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Windows_terminate.png">
     </p>
@@ -102,5 +102,55 @@ This guide will walk through the following scenarios.
 </details>
 
 ## 3. Automating EC2 software configurations
+
+<details>
+<summary><strong>Launch EC2 Instance</strong></summary><p>
+
+1. From the left-hand menu select **Instances**.
+
+1. Click **Launch New Instance**.
+
+1. Click **Select** next to the AMI *Amazon Linux 2 AMI (HVM), SSD Volume Type*.
+
+1. Leave **t2.micro** as the instance type and click **Next: Configure Instance Details** in the bottom right.
+
+1. Under **Network** select the VPC created in the previous lab *ks-vpc-01*.
+
+1. Under **Subnet** select *ks-public-a*.
+
+1. Scroll down to the bottom and expand the **Advanced Details** section. 
+
+1. Add the code below into the box labelled *(Optional)*.
+
+```
+yum install -y httpd
+chkconfig httpd on
+echo -e 'echo $(curl http://169.254.169.254/latest/meta-data/local-ipv4) > /var/www/html/index.html' >> /etc/rc.local
+chmod 755 /etc/rc.local
+service httpd start
+```
+
+1. Select **Next: Add Storage**.
+
+1. Select **Next: Add Tags**.
+
+1. Select **Next: Configure Security Group**.
+
+1. Click **Add Rule**.
+
+1. Select **HTTP** from the drop down.
+
+1. Select **Review and Launch**.
+
+1. Select **Launch**.
+
+1. Under **Select Key Pair** choose **ks-keypair**.
+
+1. Check the box **I acknowledge that I have access to the selected private key file (ks-kerpair.pem), and that without this file, I won't be able to log into my instance.**.
+
+1. Select **Launch Instance**.
+
+1. Click **View Instances**.
+</details>
 
 ## 4. Setting up snapshots
