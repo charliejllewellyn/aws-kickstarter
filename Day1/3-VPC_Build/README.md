@@ -16,7 +16,7 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 1. Firstly we will delete the default VPC created with your account to avoid any confusion later on.
 2. In the AWS console select services and then select VPC
 3. Within the VPC Dashboard select your VPC's from the left menu and then select Your VPC's.
-(image 1)
+![select_vpc](../Day1/3-VPC_Build/images/select_vpc.png)
 4. Select the tick box next to the default VPC and select **Actions > Delete VPC**.  On the confirmation screen select **Delete VPC**
 5. Click **Create VPC**
 6. You will then be presented with the screen below. Enter The details as below:  
