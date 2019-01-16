@@ -13,7 +13,6 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 
 ### Virtual Private Cloud Deployment
 
-<<<<<<< HEAD
 <details>
 <summary><strong>Delete Default VPC</strong></summary><p>
 
