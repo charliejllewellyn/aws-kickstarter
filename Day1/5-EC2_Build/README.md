@@ -167,3 +167,23 @@ This guide will walk through the following scenarios.
 </details>
 
 ## 4. Setting up snapshots
+
+<details>
+<summary><strong>Create Snapshot</strong></summary><p>
+
+1. From the instances page select the instance you just deployed.
+
+1. Click **Actions** --> **Image** --> **Create image**.
+    <p align="left">
+      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/create_snapshot.png">
+    </p>
+
+1. Enter
+    - **Image Name**: *ks-linux-webserver*
+    - **Image description**: *Linux Web server*
+    - **No Reboot**: checked
+
+1. Click **Create Image**
+    <p align="left">
+      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/snapshot_details.png">
+    </p>

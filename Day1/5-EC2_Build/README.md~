@@ -125,8 +125,9 @@ This guide will walk through the following scenarios.
     #!/bin/bash
     yum install -y httpd
     chkconfig httpd on
+    echo $(curl http://169.254.169.254/latest/meta-data/local-ipv4) > /var/www/html/index.html
     echo -e 'echo $(curl http://169.254.169.254/latest/meta-data/local-ipv4) > /var/www/html/index.html' >> /etc/rc.local
-    chmod 755 /etc/rc.local
+    chmod +x /etc/rc.d/rc.local
     service httpd start
     ```
 
