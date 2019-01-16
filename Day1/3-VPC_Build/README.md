@@ -36,7 +36,6 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
     </p>
 
     | Parameter        | Value           |
-    | ------------- |:-------------:| -----:|
     |**Name tag**| *ks-vpc-01*  |
     |**IPv4 CIDR block**| *10.0.0.0/16*  |
     |**IPv6 CIDR block**| *No IPv6 CIDR Block*|
