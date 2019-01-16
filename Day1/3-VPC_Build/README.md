@@ -69,17 +69,23 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 1. Click Create and then close once the creation has completed.  
 1. Repeat steps 2 - 4 to create subnets as below:    
 
-    - Name Tag : *ks-public-b*    
-Availability Zone: *eu-west-2b*  
-IPv4 Cidr: *10.0.2.0/24*
+    | Parameter        | Value           |
+    |---|---|
+    |**Name Tag**| *ks-public-b* | 
+    |**Availability Zone**| *eu-west-2b*  |
+    |**IPv4 Cidr**| *10.0.2.0/24* |
 
-    Name Tag : *ks-priavte-a*     
-Availability Zone: *eu-west-2a*  
-IPv4 Cidr: *10.0.11.0/24*
+    | Parameter        | Value           |
+    |---|---|
+    |**Name Tag** | *ks-priavte-a* |
+    |**Availability Zone** | *eu-west-2a* |
+    |**IPv4 Cidr** | *10.0.11.0/24* |
 
-    Name Tag : *ks-private-b*     
-    Availability Zone: *eu-west-2b*  
-    IPv4 Cidr:*10.0.12.0/24*
+    | Parameter        | Value           |
+    |---|---|
+    |**Name Tag**| *ks-private-b* |
+    |**Availability Zone**| *eu-west-2b* |
+    |**IPv4 Cidr**|*10.0.12.0/24* |
     
 6. You should now have two private and two public subnets.  We need to set the public subnets to allocate public IP address automatically.     To do this select the tick box next your first public subnet, then select Actions > Modify auto-assign IP settings and tick the **Auto-assign IPv4** box.
 7. Repeat step 6 for the second public subnet.
