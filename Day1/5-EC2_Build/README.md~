@@ -11,7 +11,7 @@ This guide will walk through the following scenarios.
 
 # 1. Generate a Keypair
 
-*Note* If you are using windows 7 or earlier you will need to download and install Putty and Puttygen from https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html.
+**Note** If you are using windows 7 or earlier you will need to download and install Putty and Puttygen from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
 <details>
 <summary><strong>Setup Amazon SNS</strong></summary><p>
