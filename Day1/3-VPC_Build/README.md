@@ -55,8 +55,8 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 1. On the next screen input the values as below:  
 
     | Parameter        | Value           |
-    |Name Tag : *ks-public-a*  
     |---|---|
+    |Name Tag : *ks-public-a*  |
     |**VPC**| *Select your vpc from the drop down menu*  |
     |**Availbility Zone**| *eu-west-2a*  |
     |**IPv4 Cidr**| *10.0.1.0/24*  |
