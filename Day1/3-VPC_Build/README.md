@@ -15,14 +15,18 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 
 1. Firstly we will delete the default VPC created with your account to avoid any confusion later on.
 2. In the AWS console select services and then select VPC
-3. Within the VPC Dashboard select your VPC's from the left menu and then select Your VPC's.
-![select_vpc](aws-kickstarter/Day1/3-VPC_Build/images/select_vpc.png)
+3. Within the VPC Dashboard select your VPC's from the left menu and then select Your VPC's.  
+ <p align="left">
+      <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/3-VPC_Build/images/select_vpc.png">
+    </p>
       
 4. Select the tick box next to the default VPC and select **Actions > Delete VPC**.  On the confirmation screen select **Delete VPC**
 5. Click **Create VPC**
 6. You will then be presented with the screen below. Enter The details as below:  
-(Image two)  
-    Name tag: *ks-vpc-01*  
+ <p align="left">
+      <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/3-VPC_Build/images/create_vpc.png">
+    </p>
+Name tag: *ks-vpc-01*  
 IPv4 CIDR block: *10.0.0.0/16*  
 IPv6 CIDR block: No IPv6 CIDR Block  
 Tenancy: Default. 
@@ -40,8 +44,11 @@ VPC: *Select your vpc from the drop down menu*
 Availbility Zone: *eu-west-2a*  
 IPv4 Cidr: *10.0.1.0/24*  
 
-    Your screen should be similar to the image below. 
-    (image 3)   
+Your screen should be similar to the image below. 
+ <p align="left">
+      <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/3-VPC_Build/images/create_subnet.png">
+    </p>  
+    
 4. Click Create and then close once the creation has completed.  
 5. Repeat steps 2 - 4 to create subnets as below:    
 
@@ -97,6 +104,9 @@ We will require two route tables within our VPC.  One for the Private Subnets an
 4. Once created we need to associate the Public subnets with the public routing table. To do this select the checkbox next to the public route table.  
 5. Select **Actions > Edit Subnet Associations**.
 6. Select the check boxes next to your two public subnets and click the **Save** button.
+ <p align="left">
+      <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/3-VPC_Build/images/subnet_assoc.png">
+    </p>
 7. Select **Actions > Set Main Route Table**.
 8. Repeat steps 2 - 6 to create a private route table. Use the values below, Remember to select your **private subnets** when editing the subnet associations:  
   Name Tag: ks-private-rt  
