@@ -90,14 +90,16 @@ This guide will walk through the following scenarios.
 
 </details>
 
-<summary><strong>Access Instance</strong></summary><p>
+<summary><strong>Delete Instance</strong></summary><p>
 
-1. Click ****.
-
-1. Click **Get Password** and past in the contents of the Key Pair *ks-keypair* and select **Decrpyt Password**.
+1. In the AWS Console click **Actions** --> **INstance State** --> **Terminate**.
     <p align="left">
-      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Windows_password.png">
+      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Windows_terminate.png">
     </p>
+
+1. Click **Yes Terminate**.
+
+</details>
 
 ## 3. Automating EC2 software configurations
 

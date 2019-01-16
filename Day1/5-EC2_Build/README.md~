@@ -69,6 +69,7 @@ This guide will walk through the following scenarios.
 </details>
 
 <details>
+
 <summary><strong>Access Instance</strong></summary><p>
 
 1. Click **Connect**.
@@ -78,7 +79,25 @@ This guide will walk through the following scenarios.
       <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Windows_password.png">
     </p>
 
+1. Open **Microsoft Remote Desktop** locally.
+
+1. Copy the *hostname*, *username* and *password* that are presented in the AWS Console.
+    <p align="left">
+      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/RDP_info.png">
+    </p>
+
+1. Open the RDP session to login to the newly deployed EC2 instance.
+
 </details>
+
+<summary><strong>Delete Instance</strong></summary><p>
+
+1. In the AWS Console click **Actions** --> **INstance State** --> **Terminate**.
+    <p align="left">
+      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Windows_terminate.png">
+    </p>
+
+1. Click **Yes Terminate**.
 
 ## 3. Automating EC2 software configurations
 
