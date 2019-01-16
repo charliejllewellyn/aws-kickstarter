@@ -122,6 +122,7 @@ This guide will walk through the following scenarios.
 
 1. Add the code below into the box labelled *(Optional)*.
     ```
+    #!/bin/bash
     yum install -y httpd
     chkconfig httpd on
     echo -e 'echo $(curl http://169.254.169.254/latest/meta-data/local-ipv4) > /var/www/html/index.html' >> /etc/rc.local
@@ -156,6 +157,12 @@ This guide will walk through the following scenarios.
 </details>
 
 <details>
-<summary><strong>Launch EC2 Instance</strong></summary><p>
+<summary><strong>Test Website Access</strong></summary><p>
+
+1. From the instances page select the instance you just deployed.
+
+1. Copy the **Public DNS (IPv4)** and enter into a web browser. This should return a web page with the private IP of the server.
+
+</details>
 
 ## 4. Setting up snapshots

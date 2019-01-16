@@ -121,14 +121,13 @@ This guide will walk through the following scenarios.
 1. Scroll down to the bottom and expand the **Advanced Details** section. 
 
 1. Add the code below into the box labelled *(Optional)*.
-
-```
-yum install -y httpd
-chkconfig httpd on
-echo -e 'echo $(curl http://169.254.169.254/latest/meta-data/local-ipv4) > /var/www/html/index.html' >> /etc/rc.local
-chmod 755 /etc/rc.local
-service httpd start
-```
+    ```
+    yum install -y httpd
+    chkconfig httpd on
+    echo -e 'echo $(curl http://169.254.169.254/latest/meta-data/local-ipv4) > /var/www/html/index.html' >> /etc/rc.local
+    chmod 755 /etc/rc.local
+    service httpd start
+    ```
 
 1. Select **Next: Add Storage**.
 
@@ -155,5 +154,8 @@ service httpd start
 
 1. Click **View Instances**.
 </details>
+
+<details>
+<summary><strong>Launch EC2 Instance</strong></summary><p>
 
 ## 4. Setting up snapshots
