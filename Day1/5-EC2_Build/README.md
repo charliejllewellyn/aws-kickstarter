@@ -38,7 +38,7 @@ This guide will walk through the following scenarios.
 ## 2. Deploying AMI's
 
 <details>
-<summary><strong>Detailed Steps</strong></summary><p>
+<summary><strong>Launch EC2 Instance</strong></summary><p>
 
 1. From the left-hand menu select **Instances**.
 
@@ -67,6 +67,37 @@ This guide will walk through the following scenarios.
 
 1. Click **View Instances**.
 </details>
+
+<details>
+
+<summary><strong>Access Instance</strong></summary><p>
+
+1. Click **Connect**.
+
+1. Click **Get Password** and past in the contents of the Key Pair *ks-keypair* and select **Decrpyt Password**.
+    <p align="left">
+      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Windows_password.png">
+    </p>
+
+1. Open **Microsoft Remote Desktop** locally.
+
+1. Copy the *hostname*, *username* and *password* that are presented in the AWS Console.
+    <p align="left">
+      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/RDP_info.png">
+    </p>
+
+1. Open the RDP session to login to the newly deployed EC2 instance.
+
+</details>
+
+<summary><strong>Access Instance</strong></summary><p>
+
+1. Click ****.
+
+1. Click **Get Password** and past in the contents of the Key Pair *ks-keypair* and select **Decrpyt Password**.
+    <p align="left">
+      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Windows_password.png">
+    </p>
 
 ## 3. Automating EC2 software configurations
 
