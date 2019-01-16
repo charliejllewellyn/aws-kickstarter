@@ -24,7 +24,7 @@ From the AWS console search for EC2 in the search box and select the service.
 From the left-hand menu select **Key Pairs**. 
 
 <p align="left">
-  <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Key_Pair_menu.png">
+  <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Key_Pair_menu.png">
 </p>
 
 Click the **Create Key Pair** button and enter a name for the *ks-keypair* for the demo. This will download the private key to your local machine.
