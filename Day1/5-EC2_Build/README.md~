@@ -53,6 +53,10 @@ Leave all other options as default and select **Review and Launch**.
 </p>
 </details>
 Select **Launch**.
+Under **Select Key Pair** choose **ks-keypair**.
+Check the box **I acknowledge that I have access to the selected private key file (ks-kerpair.pem), and that without this file, I won't be able to log into my instance.**.
+Select **Launch Instance**.
+Click **View Instances**.
 
 ## 3. Automating EC2 software configurations
 

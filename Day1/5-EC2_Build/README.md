@@ -51,12 +51,12 @@ Leave all other options as default and select **Review and Launch**.
 <p align="left">
   <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Create_ec2_instance.png">
 </p>
-</details>
 Select **Launch**.
 Under **Select Key Pair** choose **ks-keypair**.
 Check the box **I acknowledge that I have access to the selected private key file (ks-kerpair.pem), and that without this file, I won't be able to log into my instance.**.
 Select **Launch Instance**.
 Click **View Instances**.
+</details>
 
 ## 3. Automating EC2 software configurations
 
