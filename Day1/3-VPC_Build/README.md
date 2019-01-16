@@ -35,33 +35,38 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
       <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/3-VPC_Build/images/create_vpc.png">
     </p>
 
-    - **Name tag**: *ks-vpc-01*  
-    - **IPv4 CIDR block**: *10.0.0.0/16*  
-    - **IPv6 CIDR block**: *No IPv6 CIDR Block*
-    - **Tenancy: *Default*
+    | Parameter        | Value           |
+    |**Name tag**| *ks-vpc-01*  |
+    |**IPv4 CIDR block**| *10.0.0.0/16*  |
+    |**IPv6 CIDR block**| *No IPv6 CIDR Block*|
+    |**Tenancy**| *Default*|
 
 1. Click **Create**.
 1. On the confirmation screen click close. 
 
-### Create Subnets
+</details>
+
+<details>
+<summary><strong>Create subnets</strong></summary><p>
 
 1. In the VPC dashboard select subnets from the left menu.
-2. Click the **Create Subnet** Button
-3. On the next screen input the values as below:  
-Name Tag : *ks-public-a*  
-VPC: *Select your vpc from the drop down menu*  
-Availbility Zone: *eu-west-2a*  
-IPv4 Cidr: *10.0.1.0/24*  
+1. Click the **Create Subnet** Button
+1. On the next screen input the values as below:  
 
-Your screen should be similar to the image below. 
- <p align="left">
+    Name Tag : *ks-public-a*  
+    VPC: *Select your vpc from the drop down menu*  
+    Availbility Zone: *eu-west-2a*  
+    IPv4 Cidr: *10.0.1.0/24*  
+
+    Your screen should be similar to the image below. 
+    <p align="left">
       <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/3-VPC_Build/images/create_subnet.png">
     </p>  
     
-4. Click Create and then close once the creation has completed.  
-5. Repeat steps 2 - 4 to create subnets as below:    
+1. Click Create and then close once the creation has completed.  
+1. Repeat steps 2 - 4 to create subnets as below:    
 
-    Name Tag : *ks-public-b*    
+    - Name Tag : *ks-public-b*    
 Availability Zone: *eu-west-2b*  
 IPv4 Cidr: *10.0.2.0/24*
 
