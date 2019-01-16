@@ -57,6 +57,7 @@ Click the **Create Key Pair** button and enter a name for the *ks-keypair* for t
 <p align="left">
   <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Create_ec2_instance.png">
 </p>
+
 1. Select **Launch**.
 
 1. Under **Select Key Pair** choose **ks-keypair**.
