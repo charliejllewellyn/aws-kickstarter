@@ -17,7 +17,7 @@ This guide will walk through the following scenarios.
 <summary><strong>Detailed Steps</strong></summary><p>
 From the AWS console search for EC2 in the search box and select the service. 
 
-<p align="center">
+<p align="left">
   <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/EC2_console.png">
 </p>
 
