@@ -13,22 +13,29 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 
 ### Virtual Private Cloud Deployment
 
-1. Firstly we will delete the default VPC created with your account to avoid any confusion later on.
-2. In the AWS console select services and then select VPC
-3. Within the VPC Dashboard select your VPC's from the left menu and then select Your VPC's.
-![select_vpc](aws-kickstarter/Day1/3-VPC_Build/images/select_vpc.png)
-      
-4. Select the tick box next to the default VPC and select **Actions > Delete VPC**.  On the confirmation screen select **Delete VPC**
-5. Click **Create VPC**
-6. You will then be presented with the screen below. Enter The details as below:  
-(Image two)  
-    Name tag: *ks-vpc-01*  
-IPv4 CIDR block: *10.0.0.0/16*  
-IPv6 CIDR block: No IPv6 CIDR Block  
-Tenancy: Default. 
-7. Click **Create**.
+<details>
+<summary><strong>Delete Default VPC</strong></summary><p>
 
-8. On the confirmation screen click close. 
+1. In the AWS console select services and then select VPC
+1. Within the VPC Dashboard select **Your VPCs** from the left-menu and then select Your VPC's.
+    ![select_vpc](aws-kickstarter/Day1/3-VPC_Build/images/select_vpc.png)
+      
+1. Select the tick box next to the default VPC and select **Actions > Delete VPC**.  On the confirmation screen select **Delete VPC**
+
+</details>
+
+<details>
+<summary><strong>Create VPC</strong></summary><p>
+
+1. Click **Create VPC**
+1. You will then be presented with the screen below. Enter The details as below:  
+    (Image two)  
+    **Name tag**: *ks-vpc-01*  
+    **IPv4 CIDR block**: *10.0.0.0/16*  
+    **IPv6 CIDR block**: *No IPv6 CIDR Block*
+    **Tenancy: *Default*
+1. Click **Create**.
+1. On the confirmation screen click close. 
 
 ### Create Subnets
 
