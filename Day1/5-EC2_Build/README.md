@@ -15,6 +15,7 @@ This guide will walk through the following scenarios.
 
 <details>
 <summary><strong>Detailed Steps</strong></summary><p>
+
 1. From the AWS console search for EC2 in the search box and select the service. 
     <p align="left">
       <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/EC2_console.png">
@@ -38,6 +39,7 @@ This guide will walk through the following scenarios.
 
 <details>
 <summary><strong>Detailed Steps</strong></summary><p>
+
 1. From the left-hand menu select **Instances**.
 
 1. Click **Launch New Instance**. 
