@@ -69,7 +69,6 @@ This guide will walk through the following scenarios.
 </details>
 
 <details>
-
 <summary><strong>Access Instance</strong></summary><p>
 
 1. Click **Connect**.
@@ -90,9 +89,10 @@ This guide will walk through the following scenarios.
 
 </details>
 
+<details>
 <summary><strong>Delete Instance</strong></summary><p>
 
-1. In the AWS Console click **Actions** --> **INstance State** --> **Terminate**.
+1. In the AWS Console click **Actions** --> **Instance State** --> **Terminate**.
     <p align="left">
       <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Windows_terminate.png">
     </p>
