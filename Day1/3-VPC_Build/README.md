@@ -34,10 +34,10 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
     <p align="left">
       <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/3-VPC_Build/images/create_vpc.png">
     </p>
-    **Name tag**: *ks-vpc-01*  
-    **IPv4 CIDR block**: *10.0.0.0/16*  
-    **IPv6 CIDR block**: *No IPv6 CIDR Block*
-    **Tenancy: *Default*
+    - **Name tag**: *ks-vpc-01*  
+    - **IPv4 CIDR block**: *10.0.0.0/16*  
+    - **IPv6 CIDR block**: *No IPv6 CIDR Block*
+    - **Tenancy: *Default*
 1. Click **Create**.
 1. On the confirmation screen click close. 
 
