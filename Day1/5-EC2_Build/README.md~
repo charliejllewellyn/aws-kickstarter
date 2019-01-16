@@ -54,9 +54,9 @@ Click the **Create Key Pair** button and enter a name for the *ks-keypair* for t
 1. Under **Subnet** select *ks-public-a*.
 
 1. Leave all other options as default and select **Review and Launch**.
-<p align="left">
-  <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Create_ec2_instance.png">
-</p>
+    <p align="left">
+      <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Create_ec2_instance.png">
+    </p>
 
 1. Select **Launch**.
 
