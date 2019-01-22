@@ -137,12 +137,18 @@ This guide will walk through the following scenarios.
 
 1. Select **Next: Configure Security Group**.
 
+1. Under **Security Group Name** enter *ks-public-sg*
+
+1. Under **Description** enter *Security Group for Public Subnets*
+
 1. Click **Add Rule**.
 
 1. Select **HTTP** from the drop down.
     <p align="left">
       <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/linux_sg.png">
     </p>
+
+1. In the **Description** field enter *HTTP access to Public Subnet*
 
 1. Select **Review and Launch**.
 
