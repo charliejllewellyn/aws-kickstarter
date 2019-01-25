@@ -8,25 +8,7 @@ This guide will walk through the following scenarios.
 2. Target group creation
 3. Load balancer deployment
 
-## 1. Create a target group
-
-<details>
-<summary><strong>Detailed Steps</strong></summary><p>
-
-1. From the AWS console search for EC2 in the search box and select the service. 
-    <p align="left">
-      <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/EC2_console.png">
-    </p>
-
-1. From the left-hand menu select **Instances**. 
-
-1. Click the **Create Key Pair** button and enter a name for the *ks-keypair* for the demo. This will download the private key to your local machine.
-
-**Note** If you are running windows you need to follow [these instructions](https://aws.amazon.com/premiumsupport/knowledge-center/convert-pem-file-into-ppk/) to convert the key to putty.
-
-</details>
-
-## 2. Deploying AMI's
+## Setting up a load balancer
 
 <details>
 <summary><strong>Launch EC2 Instances</strong></summary><p>
