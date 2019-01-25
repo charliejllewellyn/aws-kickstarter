@@ -55,7 +55,7 @@ This guide will walk through the following scenarios.
 
 1. Enter the **Target Group Name** of *ks-targetGroup* and select the **VPC** *ks-vpc-01*.
     <p align="left">
-      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/targetgroup.png">
+      <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/7-HA_Build/images/targetgroup.png">
     </p>
 
 1. Click **Create**.
@@ -64,7 +64,7 @@ This guide will walk through the following scenarios.
 
 1. Click **Edit** and place a check in box the instances deployed in the previous step.
     <p align="left">
-      <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/targets.png">
+      <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/7-HA_Build/images/targets.png">
     </p>
 
 1. Select **Add to registered** and then click **Save**.
