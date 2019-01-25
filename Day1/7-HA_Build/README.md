@@ -19,7 +19,7 @@ This guide will walk through the following scenarios.
 
 1. In the left-hand menu click *My AMI's* and **Select** next to the AMI *ks-linux-webserver*.
     <p align="left">
-      <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/7-HA_Build/my-amis.png">
+      <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/7-HA_Build/images/my-amis.png">
     </p>
 
 1. Click **Next: Configure Instance Details**.
