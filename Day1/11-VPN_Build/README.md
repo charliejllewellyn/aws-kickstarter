@@ -74,7 +74,7 @@ If you havent created a VGW please complete this step.  If not please move to th
 1. Select your private route table and select **Actions**  --> **Edit route propogation**.
 1. Select the check box to allow route propogation, Click **Save**
    <p align="left">
-      <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/11-VPN_Build/images/rp.png">
+      <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/11-VPN_Build/images/RP.png">
     </p>
 1. Repeat this step for your public route table.
 
