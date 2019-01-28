@@ -1,0 +1,58 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Metadata:
+Description: "This template will complete the steps required to create a connection from an existing AWS VPC to an on premise facility."
+
+Parameters:
+  
+  Vpcid:
+    Description: ID of the VPC to deploy into (e.g., vpc-0343606e)
+    Type: AWS::EC2::VPC::Id
+  
+  CGWIP:
+    Description: Please enter the Public IP address of the Customer Gateway 
+    Type: String
+    AllowedPattern: ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$
+
+  RT1:
+    Description: Please enter the IP range (CIDR notation) for the public subnet in the first Availability Zone
+    Type: String
+    Default: 172.20.11.0/24
+ 
+  RT2:
+    Description: Please enter the IP range (CIDR notation) for the public subnet in the first Availability Zone
+    Type: String
+    Default: 172.20.11.0/24
+
+Resources:
+    VPNGateway:
+        Type: "AWS::EC2::VPNGateway"
+        Properties:
+            Type: "ipsec.1"
+
+    VPCGatewayAttachment:
+        Type: "AWS::EC2::VPCGatewayAttachment"
+        Properties:
+            VpcId: "vpc-020143280e354384a"
+            VpnGatewayId: !Ref VPNGateway
+
+    CustomerGateway:
+        Type: "AWS::EC2::CustomerGateway"
+        Properties:
+            IpAddress: "52.56.90.74"
+            Type: "ipsec.1"
+
+    VPNConnection:
+        Type: "AWS::EC2::VPNConnection"
+        Properties:
+            CustomerGatewayId: !Ref CustomerGateway
+            VpnGatewayId: !Ref VPNGateway
+            Type: "ipsec.1"
+            StaticRoutesOnly: false
+
+    RoutePropogation:
+        Type: "AWS::EC2::VPNGatewayRoutePropagation"
+        Properties:
+            RouteTableIds: 
+              - !Ref RT1
+              - !Ref RT2
+            VpnGatewayId: !Ref VPNGateway
