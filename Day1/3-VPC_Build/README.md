@@ -16,6 +16,7 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 <details>
 <summary><strong>Delete Default VPC</strong></summary><p>
 
+1. In the console ensure you select the region that you wish to work in via the option in the top left of the screen. 
 1. In the AWS console select services and then select VPC
 1. Within the VPC Dashboard select **Your VPCs** from the left-menu and then select Your VPC's.
     <p align="left">
@@ -133,6 +134,7 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 
 We will require two route tables within our VPC.  One for the Private Subnets and one for the Public Subnets.  We will start with the Public route table.
 
+1. Select the default route table with **Main**: *No* and choose **Actions** --> **Delete Route Table**. Confirm by selecting **Delete Route Table**.
 1. In the VPC Dashboard select Route Tables from the left hand menu. Click the **Create Route Table** button.
 1. Input the following values
 
@@ -144,7 +146,6 @@ We will require two route tables within our VPC.  One for the Private Subnets an
 1. Click **Create**
 1. Once created we need to associate the Public subnets with the public routing table. To do this select the checkbox next to the public route table.  
 1. Select **Actions > Edit Subnet Associations**.
-1. Select the default route table with **Main**: *No* and choose **Actions** --> **Delete Route Table**. Confirm by selecting **Delete Route Table**.
 1. Select the check boxes next to your two public subnets and click the **Save** button.
     <p align="left">
       <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/3-VPC_Build/images/subnet_assoc.png">
