@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This guide will assist you in deploying the fundamental elements of a basic VPC within AWS.  
+This guide will assist you in deploying the fundamental elements of a basic VPC within AWS. Wherever you see 'x' as a value please replace this value with your student number given by your instructor. When you see a value of 'yy' please replace with your initials.  This is required to avoid any clashes when working in a single account.
 
 1. Virtual Private Cloud (VPC)
 2. Subnets (Public & Private)
@@ -40,8 +40,8 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 
     | Parameter        | Value           |
     |---|---|
-    |**Name tag**| *ks-vpc-01*  |
-    |**IPv4 CIDR block**| *10.0.0.0/16*  |
+    |**Name tag**| *yy-ks-vpc-01*  |
+    |**IPv4 CIDR block**| *10.x.0.0/16*  |
     |**IPv6 CIDR block**| *No IPv6 CIDR Block*|
     |**Tenancy**| *Default*|
 
@@ -59,10 +59,10 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 
     | Parameter        | Value           |
     |---|---|
-    |Name Tag | *ks-public-a*  |
+    |Name Tag | *yy-ks-public-a*  |
     |**VPC**| *Select your vpc from the drop down menu*  |
     |**Availbility Zone**| *eu-west-2a*  |
-    |**IPv4 Cidr**| *10.0.1.0/24*  |
+    |**IPv4 Cidr**| *10.x.1.0/24*  |
 
     Your screen should be similar to the image below. 
     <p align="left">
@@ -74,21 +74,21 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 
     | Parameter        | Value           |
     |---|---|
-    |**Name Tag**| *ks-public-b* | 
+    |**Name Tag**| *yy-ks-public-b* | 
     |**Availability Zone**| *eu-west-2b*  |
-    |**IPv4 Cidr**| *10.0.2.0/24* |
+    |**IPv4 Cidr**| *10.x.2.0/24* |
 
     | Parameter        | Value           |
     |---|---|
-    |**Name Tag** | *ks-private-a* |
+    |**Name Tag** | *yy-ks-private-a* |
     |**Availability Zone** | *eu-west-2a* |
-    |**IPv4 Cidr** | *10.0.11.0/24* |
+    |**IPv4 Cidr** | *10.x.11.0/24* |
 
     | Parameter        | Value           |
     |---|---|
-    |**Name Tag**| *ks-private-b* |
+    |**Name Tag**| *yy-ks-private-b* |
     |**Availability Zone**| *eu-west-2b* |
-    |**IPv4 Cidr**|*10.0.12.0/24* |
+    |**IPv4 Cidr**|*10.x.12.0/24* |
     
 1. You should now have two private and two public subnets.  We need to set the public subnets to allocate public IP address automatically. To do this select the tick box next your first public subnet, then select **Actions** --> **Modify auto-assign IP settings** and tick the **Auto-assign IPv4** box.
 1. Repeat step 6 for the second public subnet.
@@ -99,7 +99,7 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 <summary><strong>Create Internet Gateway (IGW)</strong></summary><p>
 
 1. In the VPC Dashboard select **Internet Gateways** from the left-hand menu. Click the **Create Internet Gateway** button
-1. In the **Name tag** field insert *ks-igw-01*.
+1. In the **Name tag** field insert *yy-ks-igw-01*.
 1. Click **Create**.
 1. Once the creation has completed we need to attach the Internet Gateway to our VPC.  Select the tick box next to your IGW and select **Actions** --> **Attach to VPC**.
 1. Select your vpc from the drop down menu and click **Attach**.
@@ -113,7 +113,7 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 1. In the subnet field select your second public subnet from the dropdown menu.
 1. Click the **Create New EIP** button which will populate the second field.
 1. Click **Create a NAT Gateway**
-1. Once created, click the pencil icon next to your newly created NAT gateway and add the name *ks-natgw-01*, click the tick icon.
+1. Once created, click the pencil icon next to your newly created NAT gateway and add the name *yy-ks-natgw-01*, click the tick icon.
 
 </details>
 
@@ -121,7 +121,7 @@ This guide will assist you in deploying the fundamental elements of a basic VPC 
 <summary><strong>Create Virtual Gateway</strong></summary><p>
 
 1. In the VPC Dashboard select Virtual Private Gateways from the left hand menu. Click the **Create Virtual Private Gateway** button
-1. Input a name for the Virtual Private Gateway, in this case we will use *ks-vgw-01*.
+1. Input a name for the Virtual Private Gateway, in this case we will use *yy-ks-vgw-01*.
 1. Leave the **ASN** as *Amazon Default ASN*.
 1. Click **Create Virtual Private Gateway**.
 1. Once created we need to attach the Virtual Private Gateway to our VPC.  Select the checkbox next to your Virtual Private Gateway.  Then select **Actions > Attach to VPC**.
@@ -140,7 +140,7 @@ We will require two route tables within our VPC.  One for the Private Subnets an
 
     | Parameter        | Value           |
     |---|---|
-    |**Name Tag**| *ks-public-rt*|
+    |**Name Tag**| *yy-ks-public-rt*|
     |**VPC** |*Select your VPC from the dropdown menu* |
 
 1. Click **Create**
@@ -155,5 +155,5 @@ We will require two route tables within our VPC.  One for the Private Subnets an
   
     | Parameter        | Value           |
     |---|---|
-    |**Name Tag**| *ks-private-rt* |
+    |**Name Tag**| *yy-ks-private-rt* |
     |**VPC**| *Select your VPC from the dropdown menu* |
