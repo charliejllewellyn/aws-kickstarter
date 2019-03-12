@@ -17,16 +17,16 @@ This guide will walk through the following scenarios.
 
 1. Click **Launch Instance**. 
 
-1. In the left-hand menu click *My AMI's* and **Select** next to the AMI *ks-linux-webserver*.
+1. In the left-hand menu click *My AMI's* and **Select** next to the AMI *yy-ks-linux-webserver*.
     <p align="left">
       <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/7-HA_Build/images/my-amis.png">
     </p>
 
 1. Click **Next: Configure Instance Details**.
 
-1. Under **Network** select the VPC created in the previous lab *ks-vpc-01*.
+1. Under **Network** select the VPC created in the previous lab *yy-ks-vpc-01*.
 
-1. Under **Subnet** select *ks-private-a*.
+1. Under **Subnet** select *yy-ks-private-a*.
 
 1. Leave all other options as default and select **Review and Launch**.
     <p align="left">
@@ -53,7 +53,7 @@ This guide will walk through the following scenarios.
 
 1. Click **Create Target Group**.
 
-1. Enter the **Target Group Name** of *ks-targetGroup* and select the **VPC** *ks-vpc-01*.
+1. Enter the **Target Group Name** of *yy-ks-targetGroup* and select the **VPC** *yy-ks-vpc-01*.
     <p align="left">
       <img width="300" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/7-HA_Build/images/targetgroup.png">
     </p>
@@ -80,17 +80,17 @@ This guide will walk through the following scenarios.
 
 1. Click **Create** under **Application Load Balancer**.
 
-1. Enter a **Name** of *ks-alb* and select **VPC** *ks-vpc-01*.
+1. Enter a **Name** of *yy-ks-alb* and select **VPC** *yy-ks-vpc-01*.
 
-1. Place a check in both subnets and select *ks-public-a* and *ks-public-b*.
+1. Place a check in both subnets and select *yy-ks-public-a* and *yy-ks-public-b*.
 
 1. Click **Next: Configure Security Settings** and then **Next: Configure Security Groups**
 
-1. Click **Create a new security group** and enter **Security group name**.
+1. Click **Create a new security group** and enter **yy-Security group name**.
 
 1. Click **Next: Configure Routing**.
 
-1. In **Target group** select *Existing target group* and in **Name** select *ks-targetGroup*.
+1. In **Target group** select *Existing target group* and in **Name** select *yy-ks-targetGroup*.
 
 1. Click **Next: Register Targets** --> **Next: Review** --> **Create**.
 
