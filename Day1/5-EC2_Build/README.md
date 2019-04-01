@@ -26,7 +26,7 @@ This guide will walk through the following scenarios.
       <img width="200" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Key_Pair_menu.png">
     </p>
 
-1. Click the **Create Key Pair** button and enter a name for the *ks-keypair* for the demo. This will download the private key to your local machine.
+1. Click the **Create Key Pair** button and enter a name for the *yy-ks-keypair* for the demo. This will download the private key to your local machine.
     <p align="left">
       <img width="400" src="https://github.com/charliejllewellyn/aws-kickstarter/blob/master/Day1/5-EC2_Build/images/Create_key_pair.png">
     </p>
@@ -48,9 +48,9 @@ This guide will walk through the following scenarios.
 
 1. Leave **t2.micro** as the instance type and click **Next: Configure Instance Details** in the bottom right.
 
-1. Under **Network** select the VPC created in the previous lab *ks-vpc-01*.
+1. Under **Network** select the VPC created in the previous lab *yy-ks-vpc-01*.
 
-1. Under **Subnet** select *ks-public-a*.
+1. Under **Subnet** select *yy-ks-public-a*.
 
 1. Leave all other options as default and select **Review and Launch**.
     <p align="left">
@@ -59,7 +59,7 @@ This guide will walk through the following scenarios.
 
 1. Select **Launch**.
 
-1. Under **Select Key Pair** choose **ks-keypair**.
+1. Under **Select Key Pair** choose **yy-ks-keypair**.
 
 1. Check the box **I acknowledge that I have access to the selected private key file (ks-kerpair.pem), and that without this file, I won't be able to log into my instance.**.
 
@@ -114,9 +114,9 @@ This guide will walk through the following scenarios.
 
 1. Leave **t2.micro** as the instance type and click **Next: Configure Instance Details** in the bottom right.
 
-1. Under **Network** select the VPC created in the previous lab *ks-vpc-01*.
+1. Under **Network** select the VPC created in the previous lab *yy-ks-vpc-01*.
 
-1. Under **Subnet** select *ks-public-a*.
+1. Under **Subnet** select *yy-ks-public-a*.
 
 1. Scroll down to the bottom and expand the **Advanced Details** section. 
 
@@ -137,7 +137,7 @@ This guide will walk through the following scenarios.
 
 1. Select **Next: Configure Security Group**.
 
-1. Under **Security Group Name** enter *ks-public-sg*
+1. Under **Security Group Name** enter *yy-ks-public-sg*
 
 1. Under **Description** enter *Security Group for Public Subnets*
 
@@ -154,7 +154,7 @@ This guide will walk through the following scenarios.
 
 1. Select **Launch**.
 
-1. Under **Select Key Pair** choose **ks-keypair**.
+1. Under **Select Key Pair** choose **yy-ks-keypair**.
 
 1. Check the box **I acknowledge that I have access to the selected private key file (ks-kerpair.pem), and that without this file, I won't be able to log into my instance.**.
 
@@ -185,7 +185,7 @@ This guide will walk through the following scenarios.
     </p>
 
 1. Enter
-    - **Image Name**: *ks-linux-webserver*
+    - **Image Name**: *yy-ks-linux-webserver*
     - **Image description**: *Linux Web server*
     - **No Reboot**: checked
 

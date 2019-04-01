@@ -16,7 +16,7 @@ In order to use this template you must already have configured a VPC as per the 
 If you havent created a VGW please complete this step.  If not please move to the Create Customer Gateway Section.
 
 1. In the VPC Dashboard select Virtual Private Gateways from the left hand menu. Click the **Create Virtual Private Gateway** button
-1. Input a name for the Virtual Private Gateway, in this case we will use *ks-vgw-01*.
+1. Input a name for the Virtual Private Gateway, in this case we will use *yy-ks-vgw-01*.
 1. Leave the **ASN** as *Amazon Default ASN*.
 1. Click **Create Virtual Private Gateway**.
 1. Once created we need to attach the Virtual Private Gateway to our VPC.  Select the checkbox next to your Virtual Private Gateway.  Then select **Actions > Attach to VPC**.
@@ -52,7 +52,7 @@ If you havent created a VGW please complete this step.  If not please move to th
    
     | Parameter        | Value           |
     |---|---|
-    |**Name**| *ks-onprem-aws-vpn*|
+    |**Name**| *yy-ks-onprem-aws-vpn*|
     |**Virtual Private Gateway** |*Select Your VPG*|
     |**Customer Gateway** |*Select Existing*|
     |**Customer Gateway ID** |*Select Your Customer Gateway*|
