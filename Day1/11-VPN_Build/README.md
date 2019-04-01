@@ -33,9 +33,8 @@ If you havent created a VGW please complete this step.  If not please move to th
     | Parameter        | Value           |
     |---|---|
     |**Name**| *ks-onprem-cgw*|
-    |**Routing** |*Select Dynamic*|
-    |**BGP ASN** |*Input on prem AS number or leave as default*|
-    |**IP Address** |*Input Public IP Address of your Customer Gateway*|
+    |**Routing** |*Select Static*|
+    |**IP Address** |*Input Public IP Address of your Customer gateway (your on prem VPN server)*|
 
 1. Your Screen should reflect the below, Click the **Save** button. Then click the **Close** button.
 
